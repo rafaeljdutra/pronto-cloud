@@ -145,3 +145,20 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
+@media (max-width: 1000px) {
+    .main-container{
+        min-width: 325px;
+    } 
+}
+
+.imagem img {  
+    width: 90%;
+    }
+
+
+
+
+
+
+  
