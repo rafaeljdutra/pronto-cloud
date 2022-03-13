@@ -157,11 +157,19 @@ footer small {
     overflow: hidden !important;
 }
 
-@media (max-width: 425px) {
-    section nav,
+@media (max-width: 600px) {
+    section,
     section article {
-        width: 100%;
+    width: 100%;
+     display: grid;
     }  
+
+    nav li{
+        float: none;
+        justify-content: center;
+     }
+
+   
 
     .container {
         padding-left: 1%;
