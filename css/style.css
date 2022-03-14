@@ -113,6 +113,7 @@ nav li {
     background-color: #efefef;
     margin: 1px 20px 1px 0;
     padding: 10px;
+    list-style: none;
 }
 
 nav li:hover {
@@ -131,7 +132,7 @@ nav a:hover {
 section article {
     display: block;
     float: left;
-    width: 70%;
+    width: 100%;
 }
 
 footer {
@@ -157,19 +158,41 @@ footer small {
     overflow: hidden !important;
 }
 
-@media (max-width: 600px) {
-    section,
+@media (max-width: 768px) {
+    section nav,
     section article {
     width: 100%;
-     display: grid;
+    
+  
+      
     }  
 
-    nav li{
-        float: none;
-        justify-content: center;
-     }
+    @media (max-width: 425px) {
+        section nav li {
+            text-align: center;
+            width: 80%;
+            float: none;
+        }
+    }
 
-   
+   @media (max-width: 425px) {
+       section article{
+           width: 100%;
+           
+        }
+
+        #tenho-interesse{
+            width: 100%;
+            align-content: center;
+            text-align: center;
+        }
+           
+        footer {
+            width: 100%;
+            text-align: center;
+
+           }
+   }
 
     .container {
         padding-left: 1%;
